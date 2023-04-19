@@ -33,11 +33,13 @@ function conection(status) {
  if( status === 1) {
  return "Online";  
 }
-if(status === 2){
+else if(status === 2){
 return "Away";
 } 
-return "Offline";
+
+   return "Offline";
 }
+
 
 
 function saludo(idioma) {
@@ -50,10 +52,10 @@ function saludo(idioma) {
    if(idioma === "aleman"){
        return "Guten Tag!";
    }
-   if(idioma === "mandarin"){
+   else if(idioma === "mandarin"){
        return "Ni Hao!";
    }
- if(idioma === "ingles") {
+ else if(idioma === "ingles") {
    return "Hello!";
 }
 return "Hola!";
